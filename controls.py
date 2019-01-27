@@ -30,13 +30,13 @@ while True:
 
 	if key == 'i':
 		print("Going left!")
-		GPIO.output(7, True)
-		GPIO.output(11, False)
+		GPIO.output(7, False)
+		GPIO.output(11, True)
 	if key == 'o':
 		print("Stationary!")
 		GPIO.output(7, False)
 		GPIO.output(11, False)
 	if key == 'p':
 		print("Going backward!")
-		GPIO.output(7, False)
-		GPIO.output(11, True)
+		GPIO.output(7, True)
+		GPIO.output(11, False)
